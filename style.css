@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+.navbar_netflix {
+    height: 100%;
+    width:125px;
+}
+.navbar_nav_items{
+    display: flex;
+    gap:10px;
+}
+.nav_item_below{
+    display: flex;
+    gap:10px;
+    padding-left: 50px;
+}
+
+.netflix_logo{
+    width:100%;
+    height: 100%;
+}
+.language_drop_down{
+    background: transparent;
+    color: white;
+    border: none;
+}
+.dropdown_container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background:rgba(0, 0, 0, 0.4);
+}
+.dropdown_container_below{
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 5px;
+    width:100px;
+    background:rgba(0, 0, 0, 0.8);
+}
+.signin_button{
+    border:  #dc030f;
+    background-color: #dc030f;
+    color:white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+}
+.hero_bg_img_cont{
+    width:100%;
+    height: 100%;
+}
+.hero_bg_img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.hero_bg_overlay{
+    position: absolute;
+    overflow: auto;
+    inset: 0;
+    width:100%;
+    height: 130%;
+    /* height: 100%; */
+    background:rgba(0, 0, 0, 0.5);
+    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #000413 100% );
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    /* background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5); */
+}
+.moviecard{
+    top: 100%;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    z-index: 2;
+}
+.Poplines{
+    padding-top: 5px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.Poplines a{
+    color: #448ef4;
+}
+.hero_bg_overlay2{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 50%;
+    padding-top: 190px;
+    top: 618px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.hero_card{
+    position:absolute;
+    width: 100%;
+    top:30%;
+    display:flex;
+    gap:10px;
+    flex-direction: column;
+    text-align: center;
+}
+.hero_title{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.hero_subtitle,.hero_desc{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.email{
+    width:450px;
+    height:60px;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    border-color: white;
+    background:rgba(0, 0, 0, 0.4);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+.get_started{
+    font-size: large;
+    width:170px;
+    height: 60px;
+    background-color: #dc030f;
+    border:1px solid #dc030f;
+    color: white;
+}
+.card_2,.card_3,.card_4{
+    border-top: 8px solid rgb(35,35,35);
+    width: 100%;
+    padding: 50px;
+}
+.card_1,.card_3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc_1,.desc_3{
+    padding-left: 75px;
+}
+
+.card_1 video{
+    position: relative;
+    width: 100%;
+    height: 54%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    margin-bottom: 18px;
+    margin-left: 65px;
+}
+.card_1 img,.card_3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.style_cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+.style_cards h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.card_2,.card_4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc_2,.desc_4{
+    padding-left: 20px;
+}
+.card_2 video{
+    position: relative;
+    width: 100%;
+    height: 46%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: -1;
+    margin-bottom: 155px;
+    margin-left: 7px;
+}
+.card_2 img,.card_4 img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footer,.footer a{
+    border-top: 8px solid rgb(35,35,35);
+    color: #999;
+    font-size: 0.9rem;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+ .footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 50px;
+ }
+.footer_cols{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 2rem;
+padding-left: 50px;
+ }
+.footer ul{
+    list-style-type: none;
+}
+ .footer li{
+    line-height: 1.9;
+ }
+ .boxcard{
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    background: rgb(0,0,0);
+    z-index: 2;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    top: 63%;
+    left: 15%;
+    display: flex;
+ }
+ .boxcard img{
+    height: 100%;
+    padding: 10px;
+
+ }
+ .boxtitle{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 20px;
+    gap:5px;
+ }
+ .boxtitle h4{
+    font-size: 1rem;
+    font-weight: 400;}
+ .downloading{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0071eb;
+ }
+#icons{
+    padding-top: 50px;
+    padding-left: 57px;
+    color: #0071eb;
+}
+.card_5{
+    border-top: 8px solid rgb(35,35,35);
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    padding: 25px 100px 50px;
+}
+.card_5 h1{
+   text-align: center;
+}
+.accordion{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(45, 45, 45);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    cursor: pointer;
+    left:0;
+    border: none;
+}
+.accordionheading{
+    padding-top: 13px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 25px;
+}
+.accordionIcon{
+
+    padding-top: 13px;
+    padding-right: 50px;
+    text-align: right;
+   
+}
+.panel {
+    padding: 25px 55px;
+    margin-top: 2px;
+    font-size: larger;
+    display: none;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    overflow: hidden;
+  }
+  .hero_card_below{
+    padding-top: 30px;
+    text-align: center;
+  }
